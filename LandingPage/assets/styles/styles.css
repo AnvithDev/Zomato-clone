@@ -6,9 +6,17 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+*:focus{
+    outline: none;
+    border: none;
+}
+
+
 a{
     color: unset;
 }
+
+/* header styles */
 
 header{
     background-image: url('../images/hero.png');
@@ -16,6 +24,8 @@ header{
     background-size: cover;
     height: 60vh;
 }
+
+/* nav style */
 
 nav{
     display: flex;
@@ -38,4 +48,69 @@ nav div.container{
 nav div.nav-items:first-child{
     font-size: 0.9rem;
     font-weight: 988;
+}
+
+/* Rest of the contents in background image */
+
+header div.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 80%;
+    margin: 0px auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: #ffff;
+    font-weight: 400;
+}
+
+/* Search box  */
+
+
+header div.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 70%;
+    border-radius: 10px;
+}
+
+div.search-box div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0px 50px;
+}
+
+header div.search-box div.select{
+    color: #F57082;
+    
+}
+
+header div.search-box i{
+    margin: 10px;
+}
+
+header div.search-box div.input i{
+    color: #828282b7;
+    
+}
+
+header div.search-box div.seperator{
+    height: 50%;
+    background-color: black;
+    width:2px;
+}
+
+header div.search-box div.input{
+    flex-grow: 80;
+}
+
+header div.search-box div.input input{
+    width: 100%;
 }
