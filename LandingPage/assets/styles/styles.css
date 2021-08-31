@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing:border-box;
@@ -6,7 +6,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-*:focus{
+* :focus {
     outline: none;
     border: none;
 }
@@ -34,7 +34,7 @@ nav{
     flex-direction: row;
     padding: 25px 0px;
     width: 90%;
-    margin:0px auto; 
+    margin:0px auto;
 }
 
 nav .nav-items{
@@ -45,7 +45,7 @@ nav div.container{
     display: flex;
     }
 
-nav div.nav-items:first-child{
+nav div.nav-items:nth-child(1){
     font-size: 0.9rem;
     font-weight: 988;
 }
@@ -85,11 +85,12 @@ div.search-box div{
     align-items: center;
     height: 50px;
     margin: 0px 50px;
+    
 }
 
 header div.search-box div.select{
     color: #F57082;
-    
+
 }
 
 header div.search-box i{
@@ -98,7 +99,7 @@ header div.search-box i{
 
 header div.search-box div.input i{
     color: #828282b7;
-    
+
 }
 
 header div.search-box div.seperator{
@@ -108,9 +109,82 @@ header div.search-box div.seperator{
 }
 
 header div.search-box div.input{
-    flex-grow: 80;
+    flex-grow: 70;
+
 }
 
 header div.search-box div.input input{
     width: 100%;
+    border: none;
+    outline: none;
+}
+
+/* Sections */
+
+section.nearby{
+    min-height: 30vh;
+}
+
+section.nearby div.container{
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    padding:40px 0px;
+}
+section.nearby div.container h3{
+    font-size: 2.2rem;
+    font-weight: none;
+}
+
+section.nearby div.container div.box{
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-top: 5%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+section.nearby div.container div.box:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer elements */
+
+footer{
+    background-color:grey;
+}
+
+footer div.first{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+footer div.first div.country-lang{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div.first div.country-lang div{
+   padding: 0px 5px;
+}
+
+footer div.lists{
+    display:flex;
+    justify-content: space-between;
 }
