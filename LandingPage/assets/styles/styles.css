@@ -4,6 +4,7 @@
     box-sizing:border-box;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
 }
 
 * :focus {
@@ -119,7 +120,7 @@ header div.search-box div.input input{
     outline: none;
 }
 
-/* Sections */
+/* Section nearby*/
 
 section.nearby{
     min-height: 30vh;
@@ -171,10 +172,69 @@ section.app div.container img{
    display:block;
 }
 
+section.app div.container div.form{
+    max-width: 450px;
+    background-color: #F57082;
+}
+
+section.app div.container div.form h1{
+    font-size: 3rem;
+}
+section.app div.container div.form small{ 
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: black;
+    margin: 20px 0px;
+}
+
+/* Radio button styles  */
+
+/* ------------- */
 
 
+section.app div.container div.input{
+    width:100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
 
+section.app div.container div.input input{
+    flex-grow: 80;
+    background-color: white;
+    border: 1px solid #cfcdcf;
+    font-size: 1.2rem;
+    padding:10px;
+    border-radius: 5px;
+    height: 100%;
+    margin-right: 10px;
+}
 
+section.app div.container div.input button{
+    flex-grow:30;
+    background-color:#ED5A6B;
+    border: 1px solid #cfcdcf;
+    font-size: 1.2rem;
+    padding:10px;
+    border-radius: 5px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+section.app div.container div.download{
+    margin:20px 0px;
+    font-weight:100 ;
+    color:gray;
+}
+section.app div.container div.download div{
+    margin: 5px;
+}
+section.app div.container div.download div img{
+    max-width: 150px;
+    display: inline-block;
+    margin: 5px 5px;
+}
 
 
 
